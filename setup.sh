@@ -19,6 +19,9 @@ cp scripts/user.sh ~/.scripts/user.sh
 echo -e "Copying Screen config file into ~ ... \n"
 cp configs/.screenrc ~/.screenrc
 
+echo -e "making the .ssh dir, if not already there... \n"
+mkdir -p ~/.ssh
+
 echo -e "Adding the list of public keys from this repo into the authorized_keys file for this user... \n"
 cat configs/authorized_keys >> ~/.ssh/authorized_keys
 

@@ -1,10 +1,5 @@
 #!/bin/bash
 
-echo -e "Updating, upgrading, installing packages... \n"
-sudo apt-get update
-sudo apt-get upgrade -y
-sudo apt-get install git ruby rake 
-
 echo -e "Configuring git variables... \n"
 git config --global color.ui auto
 git config --global user.name alexfornuto

@@ -1,0 +1,8 @@
+startup_message off
+autodetach on
+defutf8 on
+backtick 1 60 60 $HOME/.scripts/user.sh
+
+hardstatus on
+hardstatus alwayslastline "%{-b gk}%-w%{+b kg}%50>%n %t%{-b gk}%+w%< %= %{y}%1`%{c}@%{m}%H"
+

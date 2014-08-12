@@ -20,4 +20,10 @@ mkdir -p ~/.ssh
 echo -e "Adding the list of public keys from this repo into the authorized_keys file for this user... \n"
 cat configs/authorized_keys >> ~/.ssh/authorized_keys
 
+echo -e "Adding aliases and colors into .bashrc... \n"
+cat configs/.bashrc >> ~/.bashrc
+
+echo -e "sourcing bash profile... \n"
+source ~/.bashrc
+
 echo -e "Done! \n"

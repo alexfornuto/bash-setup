@@ -10,11 +10,18 @@ fi
 echo -e "Please specify the hostname for this machine: "
 read hname
 
+echo -e "And the domain? "
+read domain
 
-echo -e "adding hostname to /etc/hostname... \n"
+echo -e "Adding hostname to /etc/hostname... \n"
 echo "$hname" > /etc/hostname
 hostname -F /etc/hostname
 sleep 0.5s
+
+echo -e "Replacing /etc/hosts... \n"
+sed -i ./configs/hosts s/HNAME/$hname
+sed -i ./configs/hosts s/DOMAIN/$domain
+cat ./configs/hosts > /etc/hosts
 
 echo -e "Configuring git variables... \n"
 git config --global color.ui auto

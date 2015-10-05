@@ -36,3 +36,9 @@ sleep 1
 echo -e "cloning bash-setup... \n"
 git clone https://github.com/alexfornuto/bash-setup.git
 ```
+
+The CentOS version: https://gist.github.com/alexfornuto/b61eb6301bfa5d4c6543
+
+```
+pretty much the same thing, but s/apt-get/yum/g
+```

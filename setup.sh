@@ -14,8 +14,7 @@ echo -e "And the domain? "
 read domain
 
 echo -e "Adding hostname to /etc/hostname... \n"
-echo "$hname" > /etc/hostname
-hostname -F /etc/hostname
+hostnamectl set-hostname "$hname"
 sleep 0.5s
 
 echo -e "Replacing /etc/hosts... \n"

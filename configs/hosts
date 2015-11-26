@@ -1,6 +1,6 @@
 127.0.0.1	localhost HNAME
 127.0.1.1	DOMAIN
-45.33.94.132	HNAME.DOMAIN
+45.33.94.132	HNAME.DOMAIN HNAME
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     localhost ip6-localhost ip6-loopback

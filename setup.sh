@@ -42,8 +42,8 @@ echo -e "making the .ssh dir, if not already there... \n"
 mkdir -p ~/.ssh
 sleep .5s
 
-echo -e "Adding the list of public keys from this repo into the authorized_keys file for this user... \n"
-cat configs/authorized_keys >> ~/.ssh/authorized_keys
+echo -e "Adding the list of public keys from github into the authorized_keys file for this user... \n"
+curl https://github.com/alexfornuto.keys >> ~/.ssh/authorized_keys
 sleep 1.5s
 
 echo -e "Adding aliases and colors into .bashrc... \n"

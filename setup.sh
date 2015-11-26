@@ -29,13 +29,10 @@ git config --global user.name alexfornuto
 git config --global user.email alex@fornuto.com
 sleep .5s
 
-echo -e "Making .scripts folder, if not already there... \n"
-mkdir -p ~/.scripts
+echo -e "Copying the scripts directory... \n"
+mv .scripts ~/
 sleep 1.5s
 
-echo -e "Adding user.sh to .scripts folder... \n"
-cp scripts/user.sh ~/.scripts/user.sh
-sleep .5s
 
 echo -e "Copying Screen config file into ~ ... \n"
 cp configs/.screenrc ~/.screenrc
